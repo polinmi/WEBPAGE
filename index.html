@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-vector/abstract-white-tone-memphis-social-background_53876-113860.jpg?w=1380&t=st=1728355011~exp=1728355611~hmac=a0795b2e1e02200c90fcd65d1169b06d58e1680e958507f9bfc0bb8d23e52e95");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+        display: flex;
+        justify-content: space-between; 
+        background-color: rgba(89, 84, 92, 0.425);
+        padding: 10px;
+        }
+
+        .header-left {
+         display: flex;
+         align-items: center;
+        }
+
+        .header-right {
+        display: flex;
+         gap: 15px; 
+        }
+
+        .header img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .header a {
+            float: left;
+            color: rgb(2, 1, 1);
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .header a:hover {
+            background-color: rgb(197, 114, 114);
+            color: rgb(0, 11, 49);
+        }
+
+        .header a.active {
+            background-color: rgb(24, 24, 17);
+            color: white;
+        }
+
+       
+
+        .logo-text {
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none; 
+            font-size: 24px; 
+            color: #080808; 
+        }
+
+      
+
+        .main-content {
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+
+        h1{
+            color: black;
+        }
+
+        p{
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/329/170/non_2x/cat-head-kitten-symbol-gaming-cat-logo-elegant-element-for-brand-abstract-icon-symbols-vector.jpg" alt="Logo" class="logo">
+            <a href="index.html" class="logo-text">polinmi</a>
+        </div>
+        <div class="header-right">
+            <a href="login.html">Log out</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact us</a>
+            <a class="active" href="index.html">Home</a>
+
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Welcome to My Webpage!</h1>
+        <p>This is the homepage content</p>
+    </div>
+</body>
+</html>
