@@ -33,22 +33,23 @@
 
         .login-container label {
             margin: 5px 0;
-            color: #000;
+            color: #3b2a2a;
         }
 
         .login-container input {
+
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #776969;
             border-radius: 4px;
             margin-bottom: 10px;
-            width: 200px; /* Adjust input width */
+            width: 200px; 
         }
 
         .btn {
             padding: 10px 15px;
             border: none;
             border-radius: 4px;
-            background-color: rgb(197, 114, 114);
+            background-color: rgb(94, 27, 27);
             color: white;
             cursor: pointer;
         }
@@ -62,7 +63,7 @@
         }
 
         h2{
-            color: rgb(0, 0, 0);
+            color: rgb(10, 10, 10);
             font-family: 'Times New Roman', Times, serif;
         }
 
@@ -95,16 +96,20 @@
    
 
     <div class="login-container">
-        <h2>Log In</h2>
+        <h2>Sign Up</h2>
         <form action="#" method="POST">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            <a href="/index.html" class="btn btn-primary">LOG IN</a>
-            <a href="/sign.html" class="sign-btn-primary">Sign Up</a>
+            <label for="password">Confirm Password:</label>
+            <input type="password" id="password" name="password" required>
+            <a href="/index.html" class="btn btn-primary">Sign Up</a>
+            <a href="/login.html" class="sign-btn-primary">Log in</a>
     </div>
-
+    
     <footer>
         <p>&copy; 2024 Cat Cafe. All rights reserved.</p>
         <p>Follow us on:

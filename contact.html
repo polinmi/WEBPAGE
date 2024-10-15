@@ -83,33 +83,36 @@
             color: black;
         }
 
-        .applet-container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 50px;
-        }
-
-        .applet {
+        .contact-form {
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             padding: 20px;
-            width: 30%;
+            max-width: 400px;
+            margin: 0 auto;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
         }
 
-        .applet img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-bottom: 10px;
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
-        .applet h2 {
-            color: #333;
+        .contact-form button {
+            background-color: rgb(197, 114, 114);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
         }
 
-        .applet p {
-            color: #555;
+        .contact-form button:hover {
+            background-color: rgb(24, 24, 17);
         }
 
         footer {
@@ -142,34 +145,25 @@
         </div>
         <div class="header-right">
             <a href="about.html">About us</a>
-            <a href="contact.html">Contact us</a>
-            <a class="active" href="index.html">Home</a>
+            <a class="active" href="contact.html">Contact us</a>
+            <a href="index.html">Home</a>
             <a href="login.html">Log out</a>
         </div>
     </div>
 
     <div class="main-content">
-        <h1>Types of Cats!</h1>
-    </div>
-
-    <div class="applet-container">
-        <div class="applet">
-            <img src="https://www.thesprucepets.com/thmb/5OSN_p9hUfPssKsJORQDGnAz_tQ=/1963x0/filters:no_upscale():strip_icc()/GettyImages-181861505-4e63227ed0a14dc9bfe86848ef54caf3.jpg" alt="Applet 1 Image">
-            <h2>Persian Cat</h2>
-            <p>The Persian cat, also known as the Persian Longhair, is a long-haired breed of cat characterised by a round face and short muzzle. The first documented ancestors of Persian cats might have been imported into Italy from Khorasan as early as around 1620, however, this has not been proven.</p>
-        </div>
-        <div class="applet">
-            <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/55dcf18c-6235-41f8-87b1-9eaef605c0a8/9c289723-c892-44aa-b6d1-b1dc19be2094.png" alt="Applet 2 Image">
-            <h2>Sphynx Cat</h2>
-            <p>The Sphynx cat also known as the Canadian Sphynx, is a breed of cat known for its lack of fur. Hairlessness in cats is a naturally occurring genetic mutation, and the Sphynx was developed through selective breeding of these animals, starting in the 1960s</p>
-        </div>
-        <div class="applet">
-            <img src="https://www.thesprucepets.com/thmb/17UY4UpiMekV7WpeXDziXsnt7q4=/1646x0/filters:no_upscale():strip_icc()/GettyImages-145577979-d97e955b5d8043fd96747447451f78b7.jpg" alt="Applet 3 Image">
-            <h2>Ragdoll</h2>
-            <p>The Ragdoll is a breed of cat with a distinct colorpoint coat and blue eyes. Its morphology is large and weighty, and it has a semi-long and silky soft coat. American breeder Ann Baker developed Ragdolls in the 1960s. They are best known for their docile, placid temperament and affectionate nature.</p>
+        <h1>Contact Us</h1>
+        <p>If you are interested in adopting or buying a cat, please fill out the form below:</p>
+        
+        <div class="contact-form">
+            <form action="submit_contact.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </div>
-
     <footer>
         <p>&copy; 2024 Cat Cafe. All rights reserved.</p>
         <p>Follow us on:
