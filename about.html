@@ -62,8 +62,6 @@
             color: white;
         }
 
-       
-
         .logo-text {
             font-family: 'Times New Roman', Times, serif;
             text-decoration: none; 
@@ -71,19 +69,39 @@
             color: #080808; 
         }
 
-      
-
         .main-content {
             text-align: center;
             margin-top: 50px;
             color: white;
         }
 
-        h1{
+        h1 {
             color: black;
         }
 
-        p{
+        p {
+            color: black;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .about-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .about-container p {
+            max-width: 600px;
+            font-size: 18px;
             color: black;
         }
 
@@ -116,18 +134,19 @@
             <a href="index.html" class="logo-text">polinmi</a>
         </div>
         <div class="header-right">
-            
             <a class="active" href="about.html">About us</a>
             <a href="contact.html">Contact us</a>
             <a href="index.html">Home</a>
             <a href="login.html">Log out</a>
-
         </div>
     </div>
 
     <div class="main-content">
         <h1>About Me!</h1>
-    
+        <div class="about-container">
+            <img src="https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/461151468_2250202472046337_5805452038192177419_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFyMTq3QEX9U3CYEjR0q8bVfeF_tOnu-2V94X-06e77ZW9pUw79ZSN_MKYwmnhkqb-I6-p00kh1pZ3j557PkaPk&_nc_ohc=GqpGTvePaIoQ7kNvgFeK94U&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=AHW6NGrdj0pSGftjM10cKGm&oh=00_AYBkyoW-16rehOKIFw0MfLxfu-VNQBPT3htMGPaLi61xWw&oe=6731C2D7" alt="About Me Picture" class="about-img">
+            <p>Hello! I'm Polinmi, a passionate web designer and developer. I love creating visually stunning and user-friendly websites. My journey started with a fascination for design and grew into a career focused on crafting engaging digital experiences. I believe that design should not only be beautiful but also functional.</p>
+        </div>
     </div>
 
     <footer>
