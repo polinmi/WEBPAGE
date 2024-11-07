@@ -10,14 +10,17 @@
             background-image: url("https://img.freepik.com/free-vector/abstract-white-tone-memphis-social-background_53876-113860.jpg?w=1380&t=st=1728355011~exp=1728355611~hmac=a0795b2e1e02200c90fcd65d1169b06d58e1680e958507f9bfc0bb8d23e52e95");
             background-repeat: no-repeat;
             background-size: cover;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
         }
 
         .header {
             display: flex;
             justify-content: space-between; 
-            background-color: rgba(89, 84, 92, 0.425);
-            padding: 10px;
+            background-color: rgba(89, 84, 92, 0.7);
+            padding: 15px 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         .header-left {
@@ -33,93 +36,102 @@
         .header img {
             height: 50px;
             width: 50px;
+            border-radius: 50%;
         }
 
         .header a {
-            float: left;
-            color: rgb(2, 1, 1);
+            color: #fff;
             text-align: center;
-            padding: 12px;
+            padding: 12px 20px;
             text-decoration: none;
             font-size: 18px;
             line-height: 25px;
-            border-radius: 4px;
-            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         .header a.logo {
-            font-size: 25px;
+            font-size: 28px;
             font-weight: bold;
         }
 
         .header a:hover {
             background-color: rgb(197, 114, 114);
-            color: rgb(0, 11, 49);
+            color: #fff;
         }
 
         .header a.active {
             background-color: rgb(24, 24, 17);
-            color: white;
-        }
-
-        .logo-text {
-            font-family: 'Times New Roman', Times, serif;
-            text-decoration: none; 
-            font-size: 24px; 
-            color: #080808; 
+            color: #fff;
         }
 
         .main-content {
             text-align: center;
             margin-top: 50px;
-            color: white;
         }
 
         h1 {
             color: black;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
         p {
-            color: black;
+            color: #555;
+            font-size: 16px;
         }
 
         .applet-container {
             display: flex;
             justify-content: space-around;
             margin-top: 50px;
+            flex-wrap: wrap; /* Allow wrapping of cards */
         }
 
-        .applet {
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
+        .cat-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
             padding: 20px;
             width: 30%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             text-align: center;
+            margin: 10px; /* Spacing between cards */
+            transition: transform 0.3s, box-shadow 0.3s; /* Animation */
         }
 
-        .applet img {
+        .cat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .cat-image {
             max-width: 100%;
             border-radius: 10px;
             margin-bottom: 10px;
         }
 
-        .applet h2 {
+        .cat-card h2 {
             color: #333;
+            font-size: 24px;
+            margin: 10px 0;
         }
 
-        .applet p {
+        .cat-card p {
             color: #555;
+            font-size: 14px;
+            margin: 5px 0;
         }
 
         footer {
-            background-color: rgba(89, 84, 92, 0.8);
+            background-color: rgba(89, 84, 92, 0.9);
             color: white;
             text-align: center;
             padding: 20px;
             position: relative;
             bottom: 0;
             width: 100%;
+            margin-top: 50px; /* Space above footer */
         }
 
         footer a {
@@ -132,7 +144,6 @@
             text-decoration: underline;
         }
     </style>
-
 </head>
 <body>
     <div class="header">
@@ -148,35 +159,49 @@
         </div>
     </div>
 
-    <div class="main-content">
-        <h1>Types of Cats!</h1>
-    </div>
+    <h1>Cats Gallery</h1>
+    <div id="cat-container" class="applet-container"></div>
 
-    <div class="applet-container">
-        <div class="applet">
-            <img src="https://www.thesprucepets.com/thmb/5OSN_p9hUfPssKsJORQDGnAz_tQ=/1963x0/filters:no_upscale():strip_icc()/GettyImages-181861505-4e63227ed0a14dc9bfe86848ef54caf3.jpg" alt="Applet 1 Image">
-            <h2>Persian Cat</h2>
-            <p>The Persian cat, also known as the Persian Longhair, is a long-haired breed of cat characterised by a round face and short muzzle. The first documented ancestors of Persian cats might have been imported into Italy from Khorasan as early as around 1620, however, this has not been proven.</p>
-        </div>
-        <div class="applet">
-            <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/55dcf18c-6235-41f8-87b1-9eaef605c0a8/9c289723-c892-44aa-b6d1-b1dc19be2094.png" alt="Applet 2 Image">
-            <h2>Sphynx Cat</h2>
-            <p>The Sphynx cat also known as the Canadian Sphynx, is a breed of cat known for its lack of fur. Hairlessness in cats is a naturally occurring genetic mutation, and the Sphynx was developed through selective breeding of these animals, starting in the 1960s</p>
-        </div>
-        <div class="applet">
-            <img src="https://www.thesprucepets.com/thmb/17UY4UpiMekV7WpeXDziXsnt7q4=/1646x0/filters:no_upscale():strip_icc()/GettyImages-145577979-d97e955b5d8043fd96747447451f78b7.jpg" alt="Applet 3 Image">
-            <h2>Ragdoll</h2>
-            <p>The Ragdoll is a breed of cat with a distinct colorpoint coat and blue eyes. Its morphology is large and weighty, and it has a semi-long and silky soft coat. American breeder Ann Baker developed Ragdolls in the 1960s. They are best known for their docile, placid temperament and affectionate nature.</p>
-        </div>
-    </div>
+    <script>
+        async function fetchCatData() {
+            const response = await fetch('index.json'); 
+            const cats = await response.json();
+            return cats;
+        }
+
+        function renderCats(cats) {
+            const catContainer = document.getElementById('cat-container');
+            cats.forEach(cat => {
+                const catCard = document.createElement('div');
+                catCard.classList.add('cat-card');
+
+                const catImage = document.createElement('img');
+                catImage.src = cat.image;
+                catImage.alt = cat.name;
+                catImage.classList.add('cat-image');
+
+                const catName = document.createElement('h2');
+                catName.textContent = cat.name;
+
+                const catDescription = document.createElement('p');
+                catDescription.textContent = cat.description;
+
+                catCard.appendChild(catImage);
+                catCard.appendChild(catName);
+                catCard.appendChild(catDescription);
+                catContainer.appendChild(catCard);
+            });
+        }
+
+        fetchCatData().then(renderCats).catch(console.error);
+    </script>
 
     <footer>
-        <p>&copy; 2024 Cat Cafe. All rights reserved.</p>
         <p>Follow us on:
-            <a href="#">Facebook</a> | 
-            <a href="#">Instagram</a> | 
-            <a href="#">Twitter</a>
+            <a href="https://www.facebook.com/hananim.20" target="_blank">Facebook</a> | 
+            <a href="https://www.instagram.com/allaboutpaulen/" target="_blank">Instagram</a>
         </p>
+        <p>&copy; 2024 Cat Cafe. All rights reserved.</p>
     </footer>
 </body>
 </html>

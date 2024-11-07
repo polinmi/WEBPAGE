@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+    <title>Contact Us - My Webpage</title>
 
     <style>
         body {
@@ -11,13 +11,16 @@
             background-repeat: no-repeat;
             background-size: cover;
             font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            margin: 0;
         }
 
         .header {
             display: flex;
             justify-content: space-between; 
-            background-color: rgba(89, 84, 92, 0.425);
-            padding: 10px;
+            background-color: rgba(89, 84, 92, 0.7);
+            padding: 15px 30px; /* Updated padding */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         .header-left {
@@ -33,62 +36,67 @@
         .header img {
             height: 50px;
             width: 50px;
+            border-radius: 50%;
         }
 
         .header a {
-            float: left;
-            color: rgb(2, 1, 1);
+            color: #fff;
             text-align: center;
-            padding: 12px;
+            padding: 12px 20px;
             text-decoration: none;
             font-size: 18px;
             line-height: 25px;
-            border-radius: 4px;
-            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         .header a.logo {
-            font-size: 25px;
+            font-size: 28px;
             font-weight: bold;
         }
 
         .header a:hover {
             background-color: rgb(197, 114, 114);
-            color: rgb(0, 11, 49);
+            color: #fff;
         }
 
         .header a.active {
             background-color: rgb(24, 24, 17);
-            color: white;
-        }
-
-        .logo-text {
-            font-family: 'Times New Roman', Times, serif;
-            text-decoration: none; 
-            font-size: 24px; 
-            color: #080808; 
+            color: #fff;
         }
 
         .main-content {
             text-align: center;
             margin-top: 50px;
-            color: white;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
             color: black;
+            font-size: 32px;
+            margin-bottom: 20px;
         }
 
         p {
-            color: black;
+            color: #555;
+            font-size: 18px;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            font-size: 16px;
+            color: #333;
         }
 
         .contact-form {
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             padding: 20px;
-            max-width: 400px;
-            margin: 0 auto;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
@@ -109,6 +117,7 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            transition: background-color 0.3s;
         }
 
         .contact-form button:hover {
@@ -135,7 +144,6 @@
             text-decoration: underline;
         }
     </style>
-
 </head>
 <body>
     <div class="header">
@@ -155,6 +163,16 @@
         <h1>Contact Us</h1>
         <p>If you are interested in adopting or buying a cat, please fill out the form below:</p>
         
+        <div class="contact-info">
+            <p><strong>Address:</strong> Tankulan, Manolo Fortich Bukidnon</p>
+            <p><strong>Phone:</strong> 09X-XXXX-XXXX</p>
+            <p><strong>Email:</strong> meow@catcafe.com</p>
+            <p><strong>Follow us on:</strong> 
+                <a href="https://www.facebook.com/hananim.20" style="color: rgb(197, 114, 114);">Facebook</a>, 
+                <a href="https://www.instagram.com/allaboutpaulen/" style="color: rgb(197, 114, 114);">Instagram</a>, 
+            </p>
+        </div>
+
         <div class="contact-form">
             <form action="submit_contact.php" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
@@ -165,12 +183,11 @@
         </div>
     </div>
     <footer>
-        <p>&copy; 2024 Cat Cafe. All rights reserved.</p>
         <p>Follow us on:
-            <a href="#">Facebook</a> | 
-            <a href="#">Instagram</a> | 
-            <a href="#">Twitter</a>
+            <a href="https://www.facebook.com/hananim.20" target="_blank">Facebook</a> | 
+            <a href="https://www.instagram.com/allaboutpaulen/" target="_blank">Instagram</a>
         </p>
+        <p>&copy; 2024 Cat Cafe. All rights reserved.</p>
     </footer>
 </body>
 </html>

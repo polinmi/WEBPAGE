@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+    <title>About Us - My Webpage</title>
 
     <style>
         body {
@@ -11,62 +11,58 @@
             background-repeat: no-repeat;
             background-size: cover;
             font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            margin: 0;
         }
 
         .header {
-        display: flex;
-        justify-content: space-between; 
-        background-color: rgba(89, 84, 92, 0.425);
-        padding: 10px;
+            display: flex;
+            justify-content: space-between; 
+            background-color: rgba(89, 84, 92, 0.7);
+            padding: 15px 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         .header-left {
-         display: flex;
-         align-items: center;
+            display: flex;
+            align-items: center;
         }
 
         .header-right {
-        display: flex;
-         gap: 15px; 
+            display: flex;
+            gap: 15px; 
         }
 
         .header img {
             height: 50px;
             width: 50px;
+            border-radius: 50%;
         }
 
         .header a {
-            float: left;
-            color: rgb(2, 1, 1);
+            color: #fff;
             text-align: center;
-            padding: 12px;
+            padding: 12px 20px;
             text-decoration: none;
             font-size: 18px;
             line-height: 25px;
-            border-radius: 4px;
-            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         .header a.logo {
-            font-size: 25px;
+            font-size: 28px;
             font-weight: bold;
         }
 
         .header a:hover {
             background-color: rgb(197, 114, 114);
-            color: rgb(0, 11, 49);
+            color: #fff;
         }
 
         .header a.active {
             background-color: rgb(24, 24, 17);
-            color: white;
-        }
-
-        .logo-text {
-            font-family: 'Times New Roman', Times, serif;
-            text-decoration: none; 
-            font-size: 24px; 
-            color: #080808; 
+            color: #fff;
         }
 
         .main-content {
@@ -76,10 +72,6 @@
         }
 
         h1 {
-            color: black;
-        }
-
-        p {
             color: black;
         }
 
@@ -125,7 +117,6 @@
             text-decoration: underline;
         }
     </style>
-
 </head>
 <body>
     <div class="header">
@@ -134,7 +125,7 @@
             <a href="index.html" class="logo-text">polinmi</a>
         </div>
         <div class="header-right">
-            <a class="active" href="about.html">About us</a>
+            <a href="about.html" class="active">About us</a>
             <a href="contact.html">Contact us</a>
             <a href="index.html">Home</a>
             <a href="login.html">Log out</a>
@@ -152,9 +143,8 @@
     <footer>
         <p>&copy; 2024 Cat Cafe. All rights reserved.</p>
         <p>Follow us on:
-            <a href="#">Facebook</a> | 
-            <a href="#">Instagram</a> | 
-            <a href="#">Twitter</a>
+            <a href="https://www.facebook.com/hananim.20" target="_blank">Facebook</a> | 
+            <a href="https://www.instagram.com/allaboutpaulen/" target="_blank">Instagram</a>
         </p>
     </footer>
 </body>

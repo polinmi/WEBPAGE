@@ -10,15 +10,18 @@
             background-repeat: no-repeat;
             background-size: cover;
             font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column; /* Arrange elements vertically */
+            height: 100vh; /* Full height of the viewport */
+            margin: 0; /* Reset default margin */
         }
-
-      
 
         .login-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 50px; 
+            justify-content: center; /* Center the login container */
+            flex-grow: 1; /* Allow this section to grow and take available space */
         }
 
         .login-container form {
@@ -51,17 +54,19 @@
             background-color: rgb(197, 114, 114);
             color: white;
             cursor: pointer;
+            margin-bottom: 10px; /* Add space below the button */
         }
 
-        .login-container button:hover {
+        .btn:hover {
             background-color: rgb(24, 24, 17);
         }
 
-        .sign-btn-primary{
+        .sign-btn-primary {
             color: blue;
+            text-decoration: underline; /* Add underline to the sign-up link */
         }
 
-        h2{
+        h2 {
             color: rgb(0, 0, 0);
             font-family: 'Times New Roman', Times, serif;
         }
@@ -71,9 +76,7 @@
             color: white;
             text-align: center;
             padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            margin-top: auto; /* Push footer to the bottom */
         }
 
         footer a {
@@ -86,14 +89,12 @@
             text-decoration: underline;
         }
 
-
-        
+        footer p {
+            margin: 5px 0; /* Add some margin for footer text */
+        }
     </style>
-    
 </head>
 <body>
-   
-
     <div class="login-container">
         <h2>Log In</h2>
         <form action="#" method="POST">
@@ -101,17 +102,17 @@
             <input type="text" id="username" name="username" required>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            <a href="/index.html" class="btn btn-primary">LOG IN</a>
+            <a href="/index.html" class="btn">LOG IN</a>
             <a href="/sign.html" class="sign-btn-primary">Sign Up</a>
+        </form>
     </div>
 
     <footer>
-        <p>&copy; 2024 Cat Cafe. All rights reserved.</p>
         <p>Follow us on:
-            <a href="#">Facebook</a> | 
-            <a href="#">Instagram</a> | 
-            <a href="#">Twitter</a>
+            <a href="https://www.facebook.com/hananim.20" target="_blank">Facebook</a> | 
+            <a href="https://www.instagram.com/allaboutpaulen/" target="_blank">Instagram</a>
         </p>
+        <p>&copy; 2024 Cat Cafe. All rights reserved.</p>
     </footer>
 </body>
 </html>
